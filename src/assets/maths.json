@@ -40,8 +40,7 @@
     "choices": [
       {"value": "6", "correct": false},
       {"value": "12", "correct": false},
-      {"value": "8", "correct": true},
-      {"value": "bullshit", "correct": false}
+      {"value": "8", "correct": true}
     ]
   }
 ]
