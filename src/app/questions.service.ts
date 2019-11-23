@@ -19,7 +19,7 @@ export class QuestionsService {
     );
   }
 
-  public getJSON(fileName: string) {
+  public getQuestions(fileName: string) {
     return this.http.get(`./assets/${fileName}.json`).pipe(
       map((result: any[]) => {
         return result.map(r => new Question(r.label, r.choices));
