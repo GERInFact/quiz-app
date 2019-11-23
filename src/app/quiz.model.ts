@@ -7,7 +7,7 @@ export class Question {
 }
 
 export class Quiz {
-  constructor(public label: string, public questions: Question[]) {}
+  constructor(public label: string, public questions: Question[], public description: string, public fileName: string) {}
 }
 
 export class Answers {
