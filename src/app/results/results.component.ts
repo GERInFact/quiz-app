@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { Answers } from "../quiz.model";
+import { Answers, Question } from "../quiz.model";
 
 
 @Component({
@@ -10,6 +10,9 @@ import { Answers } from "../quiz.model";
 export class ResultsComponent {
   @Input()
   answers: Answers;
+
+  @Input()
+  questions: Question[] = [];
 
   constructor() {}
 

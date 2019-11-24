@@ -1,15 +1,15 @@
 <div class="quiz" *ngIf="this.quiz">
   <div class="questions" *ngIf="!this.showResults">
     <app-question-form
-      [question]="this.quiz.questions[this.currentQuestionIndex]"
-      (onChoiceMade)="updateChoice($event)"
+      [question]="this.quiz.questions[currentQuestionIndex]"
+      (onChoiceMade)="this.updateChoice($event)"
     >
     </app-question-form>
 
     <button
       class="btn btn-success"
       (click)="this.nextOrViewResults()"
-      [disabled]="!this.answers.values[currentQuestionIndex]"
+      [disabled]="!this.answers.values[this.currentQuestionIndex]"
     >
       {{
         this.currentQuestionIndex === this.quiz.questions.length - 1

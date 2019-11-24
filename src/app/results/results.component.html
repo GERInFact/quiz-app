@@ -1,10 +1,18 @@
 <div class="results">
-  <h2>Results</h2>
-  <div
-    class="answer"
-    *ngFor="let a of answers.values"
-    [ngClass]="{ correct: a.isCorrect }"
-  >
-    {{ a.value }}
+  <div>
+    <h1 class="title">Results</h1>
+    <div
+      class="answer"
+      *ngFor="let answer of answers.values; index as i"
+      [ngClass]="{ correct: answer.isCorrect, wrong : !answer.isCorrect }"
+    >
+      <h2>{{ this.questions[i].label }}</h2>
+      <p>{{ this.answer.value }}</p>
+    </div>
+    <div>
+      <button mat-button color="primary" class="btn btn-primary">
+        <a routerLink="/welcome" class="btn btn-primary">Choose another quiz</a>
+      </button>
+    </div>
   </div>
 </div>

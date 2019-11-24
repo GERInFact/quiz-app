@@ -2,45 +2,45 @@
   {
     "label": "What is 2 + 3?",
     "choices": [
-      {"value": "5", "correct": true},
-      {"value": "15", "correct": false},
-      {"value": "3", "correct": false},
-      {"value": "pi", "correct": false}
+      {"value": "5", "isCorrect": true},
+      {"value": "15", "isCorrect": false},
+      {"value": "3", "isCorrect": false},
+      {"value": "pi", "isCorrect": false}
     ]
   },
   {
     "label": "What is 3 - 9?",
     "choices": [
-      {"value": "3", "correct": false},
-      {"value": "-6", "correct": true},
-      {"value": "Bonjour", "correct": false},
-      {"value": "pi", "correct": false}
+      {"value": "3", "isCorrect": false},
+      {"value": "-6", "isCorrect": true},
+      {"value": "Bonjour", "isCorrect": false},
+      {"value": "pi", "isCorrect": false}
     ]
   },
   {
     "label": "What is 12 % 9?",
     "choices": [
-      {"value": "3", "correct": true},
-      {"value": "1/3", "correct": false},
-      {"value": "12", "correct": false},
-      {"value": "unknown", "correct": false}
+      {"value": "3", "isCorrect": true},
+      {"value": "1/3", "isCorrect": false},
+      {"value": "12", "isCorrect": false},
+      {"value": "unknown", "isCorrect": false}
     ]
   },
   {
     "label": "What is 2 ^ 0?",
     "choices": [
-      {"value": "0", "correct": false},
-      {"value": "1", "correct": true},
-      {"value": "2", "correct": false},
-      {"value": "invalid operation", "correct": false}
+      {"value": "0", "isCorrect": false},
+      {"value": "1", "isCorrect": true},
+      {"value": "2", "isCorrect": false},
+      {"value": "invalid operation", "isCorrect": false}
     ]
   },
   {
     "label": "What is 2 ** 3?",
     "choices": [
-      {"value": "6", "correct": false},
-      {"value": "12", "correct": false},
-      {"value": "8", "correct": true}
+      {"value": "6", "isCorrect": false},
+      {"value": "12", "isCorrect": false},
+      {"value": "8", "isCorrect": true}
     ]
   }
 ]
