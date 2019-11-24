@@ -6,7 +6,7 @@
       *ngFor="let answer of answers.values; index as i"
       [ngClass]="{ correct: answer.isCorrect, wrong : !answer.isCorrect }"
     >
-      <h2>{{ this.questions[i].label }}</h2>
+      <h2>{{ this.questions[i].label | uppercase}}</h2>
       <p>{{ this.answer.value }}</p>
     </div>
     <div>
