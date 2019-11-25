@@ -10,6 +10,9 @@ import { ResultsComponent } from "./results/results.component";
 import { QuestionsComponent } from "./questions/questions.component";
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule, MatButtonModule } from '@angular/material';
+import {MatGridListModule } from "@angular/material/grid-list";
+import { CorrectAnswersPipe } from './correct-answers.pipe';
 
 const appRoutes: Routes = [
   { path: "welcome", component: WelcomeComponent },
@@ -23,14 +26,18 @@ const appRoutes: Routes = [
     QuestionFormComponent,
     ResultsComponent,
     QuestionsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    CorrectAnswersPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatGridListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

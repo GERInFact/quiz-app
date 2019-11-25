@@ -1,0 +1,26 @@
+a {
+    color: white;
+}
+
+
+.title {
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+mat-card-content {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #E91E63;
+}
+
+.mat-raised-button {
+    margin-top: 10px;
+}

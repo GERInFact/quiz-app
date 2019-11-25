@@ -1,18 +1,21 @@
 <div class="results">
-  <div>
-    <h1 class="title">Results</h1>
-    <div
+  <mat-card>
+    <mat-card-title class="title"
+      >Correct answers: {{ this.answers | correctAnswers }} of
+      {{ this.answers.values.length }}</mat-card-title
+    >
+    <mat-card-content
       class="answer"
       *ngFor="let answer of answers.values; index as i"
-      [ngClass]="{ correct: answer.isCorrect, wrong : !answer.isCorrect }"
+      [ngClass]="{ correct: answer.isCorrect, wrong: !answer.isCorrect }"
     >
-      <h2>{{ this.questions[i].label | uppercase}}</h2>
+      <h2>{{ this.questions[i].label | uppercase }}</h2>
       <p>{{ this.answer.value }}</p>
-    </div>
-    <div>
-      <button mat-button color="primary" class="btn btn-primary">
-        <a routerLink="/welcome" class="btn btn-primary">Choose another quiz</a>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" class="btn btn-primary">
+        <a routerLink="/welcome">Choose another quiz</a>
       </button>
-    </div>
-  </div>
+    </mat-card-actions>
+  </mat-card>
 </div>

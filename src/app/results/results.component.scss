@@ -1,6 +1,22 @@
+a {
+  color: white;
+}
+
+.results {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.mat-card {
+    min-width: 280px;
+}
+mat-card-content {
+  padding: 10px;
+}
 .correct {
-    background-color: aquamarine;
+  background-color: #424242;
 }
 .wrong {
-    background-color: orangered;
+  background-color: #880e4f;
 }

@@ -5,17 +5,5 @@
       (onChoiceMade)="this.updateChoice($event)"
     >
     </app-question-form>
-
-    <button
-      class="btn btn-success"
-      (click)="this.nextOrViewResults()"
-      [disabled]="!this.answers.values[this.currentQuestionIndex]"
-    >
-      {{
-        this.currentQuestionIndex === this.quiz.questions.length - 1
-          ? "View results"
-          : "Next"
-      }}
-    </button>
   </div>
 </div>

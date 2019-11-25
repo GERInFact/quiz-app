@@ -11,8 +11,9 @@
     </app-question-form>
     <div>
       <button
-        mat-button
-        class="btn btn-success btn-primary"
+        mat-raised-button
+        color="primary"
+        class="btn btn-primary"
         (click)="this.nextOrViewResults()"
         [disabled]="!this.answers.values[currentQuestionIndex]"
       >
